@@ -1,0 +1,65 @@
+#! /bin/sh
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+#Autostart
+#----------------------------------------------------------------------
+#Monitors
+xrandr --output HDMI-1 --mode 1920x1080i --rate 60
+#feh
+feh &
+#Us_ru toggle switch languages
+setxkbmap -option grp:alt_shift_toggle us,ru &
+#Dunst - install libnotify
+dunst -config $HOME/.config/dunst/dunstrc &
+#Flameshot
+flameshot &
+#Xclip
+xclip &
+#Compositor
+picom --config $HOME/.config/bspwm/picom/2.conf &
+#Set root pointer fix mouse
+xsetroot -cursor_name left_ptr
+#----------------------------------------------------------------------
+
+
+#----------------------------------------------------------------------
+#Scripts
+~/.config/polybar/launch.sh
+~/.config/scripts/wall_use
+#----------------------------------------------------------------------
+
+
+#Windows
+#----------------------------------------------------------------------
+bspc monitor -d 󰖟 󱢍 󰨞   
+bspc config focus_follows_pointer true
+bspc config focused_border_color ${xrdb:color9}}
+bspc config normal_border_color ${xrdb:color1}
+bspc config border_width 5
+bspc config borderless_monocle true
+bspc config border_width         4
+bspc config window_gap          12
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+#----------------------------------------------------------------------
+
+
+#Rules
+#----------------------------------------------------------------------
+declare -a web=(Brave-browser Google-chrome Microsoft-edge Firefox)
+for i in ${web[@]}; do
+   bspc rule -a $i desktop='^1' follow=on focus=on; done
+   
+declare -a code=(Geany Emacs code-oss Code)
+for i in ${code[@]}; do
+   bspc rule -a $i desktop='^3' follow=on focus=on; done
+   
+declare -a files=(Thunar ranger qBittorrent)
+for i in ${files[@]}; do
+   bspc rule -a $i desktop='^5' follow=on focus=on; done
+
+declare -a comm=(TelegramDesktop Hexchat)
+for i in ${comm[@]}; do
+   bspc rule -a $i desktop='^6' follow=on focus=on; done
+#----------------------------------------------------------------------

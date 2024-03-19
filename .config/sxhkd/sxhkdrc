@@ -1,0 +1,112 @@
+#######
+#SXHKD#
+#######
+
+#Terminal
+super + Return
+	alacritty
+
+#Hide or Unhide Polybar
+super + p
+	sh $HOME/.config/scripts/toggle-polybar
+
+#Reload sxhkd
+super + Escape
+    pkill -USR1 -x sxhkd
+
+#Launch Rofi Menu
+super + {d,x}
+    {rofi -show drun,sh $HOME/.config/scripts/powermenu}
+
+#Launch nitrogen
+super + n
+	nitrogen
+	
+#######
+#BSPWM#
+#######
+
+#Reload bspwm
+super + alt + r
+	bspc wm -r
+
+#Close windows
+super + q
+	bspc node -{c,k}
+
+#Alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+#############
+#state/flags#
+#############
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+#
+# focus/swap
+#
+
+#Focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+#Focus the next/previous window in the current desktop
+super + space
+	bspc node -f {next,prev}.local.!hidden.window
+
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+#
+# preselect
+#
+
+# preselect the direction
+	bspc node -p {west,south,north,east}
+
+super + ctrl + {Left,Down,Up,Right}
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+#
+# move/resize
+#
+
+# expand a window by moving one of its side outward
+super + alt + {Left,Down,Up,Right}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + shift + {Left,Down,Up,Right}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+#super + {Left,Down,Up,Right}
+#	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Launch Applications
+super + F1
+	firefox
+
+super + F2
+	alacritty -e ranger
+
+super + F3
+	sh $HOME/.config/scripts/xcolor-pick
+
+super + F4
+	sh $HOME/.config/scripts/wall_random
+
+super + F5
+	alacritty -t python $HOME/.config/scripts/news.py

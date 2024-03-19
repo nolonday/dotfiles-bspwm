@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Set a wallpaper from the specified folder
+wallpaper="$(cat "${HOME}/.fehbg" | awk -F "'" '{print $2}')"
+feh --bg-fill wallpaper
+# Apply pywal color scheme to desktop
+wal -i $wallpaper
+pywalfox update 
+wal-telegram --wal
+wpg image
+betterlockscreen -u $wallpaper
