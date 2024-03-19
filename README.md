@@ -17,5 +17,5 @@
   ✅Shell:Fish
 
 <p align="center">
- <img width="200px" src="bspwm-rice.png" alt="qr"/>
+ <img width="900px" src="bspwm-rice.png" alt="qr"/>
 </p>
