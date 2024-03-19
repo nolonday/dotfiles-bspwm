@@ -18,4 +18,5 @@
 
 
 <img width="900px" src="bspwm-rice.png" alt="qr"/>
+
 <img width="900px" src="bspwm-rice2.png" alt="qr"/>
