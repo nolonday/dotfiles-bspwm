@@ -109,4 +109,4 @@ super + F4
 	sh $HOME/.config/scripts/wall_random
 
 super + F5
-	alacritty -t python $HOME/.config/scripts/news.py
+	alacritty -e news.py
