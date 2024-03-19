@@ -17,6 +17,14 @@
   ✅Shell:Fish
 
 <p>🔗Example photo:</p>
-<img width="900px" src="bspwm-rice.png" alt="qr"/>
+<img width="900px" src="example-image/bspwm-rice1.png" alt="qr"/>
 <p>🔗Example photo:</p>
-<img width="900px" src="bspwm-rice2.png" alt="qr"/>
+<img width="900px" src="example-image/bspwm-rice2.png" alt="qr"/>
+<p>🔗Example photo:</p>
+<img width="900px" src="example-image/bspwm-rice3.png" alt="qr"/>
+<p>🔗Example photo:</p>
+<img width="900px" src="example-image/bspwm-rice4.png" alt="qr"/>
+<p>🔗Example photo:</p>
+<img width="900px" src="example-image/bspwm-rice5.png" alt="qr"/>
+<p>🔗Example photo:</p>
+<img width="900px" src="example-image/bspwm-rice6.png" alt="qr"/>
