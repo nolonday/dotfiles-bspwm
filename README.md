@@ -1,4 +1,5 @@
-🌿BSPWM - ARCH🌿 
+🌿BSPWM - ARCH🌿
+
   ✅OS:Arch Linux
   
   ✅WM:BSPWM
