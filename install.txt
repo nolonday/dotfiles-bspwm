@@ -1,0 +1,8 @@
+1.bspwm => ~/.config/bspwm/ => /usr/share/doc/bspwm/examples/bspwmrc
+2.sxhkd => ~/.config/sxhkd/ => /usr/share/doc/bspwm/examples/sxhkdrc
+3. .xinirc/ => 
+sxhkd &
+exec bspw
+4.alacritty,firefox,JetBrainsMono Nerd Font,dunst,libnotify,feh,unzip,
+flameshot,xclip,picom,polybar,micro,code,telegram-desktop,thunar,fish,
+ranger,rofi,pulseaudio,pywal,lxappearance
