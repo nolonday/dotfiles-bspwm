@@ -1,17 +1,17 @@
 🌿BSPWM - ARCH🌿 
-  ✅OS: Arch Linux
+  ✅OS:Arch Linux
   
-  ✅WM: BSPWM
+  ✅WM:BSPWM
   
-  ✅Bar: Polybar
+  ✅Bar:Polybar
   
-  ✅Compositor: Picom
+  ✅Compositor:Picom
   
-  ✅Terminal: Alacritty
+  ✅Terminal:Alacritty
   
-  ✅App Launcher: Rofi
+  ✅App Launcher:Rofi
   
-  ✅Notify Daemon: Dunst
+  ✅Notify Daemon:Dunst
   
-  ✅Shell: Fish
+  ✅Shell:Fish
 
