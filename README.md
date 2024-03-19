@@ -1,5 +1,4 @@
 🌿BSPWM - ARCH🌿 
-
   ✅OS: Arch Linux
   ✅WM: BSPWM
   ✅Bar: Polybar
