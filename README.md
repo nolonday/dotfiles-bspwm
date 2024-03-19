@@ -16,7 +16,7 @@
   
   ✅Shell:Fish
 
-<p>Example photo🔗</p>
+<p>🔗Example photo:</p>
 <img width="900px" src="bspwm-rice.png" alt="qr"/>
-<p>Example photo🔗</p>
+<p>🔗Example photo:</p>
 <img width="900px" src="bspwm-rice2.png" alt="qr"/>
