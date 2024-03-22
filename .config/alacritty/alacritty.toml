@@ -1,4 +1,4 @@
-# import = ["/home/user/.config/alacritty/themes/custom.toml"]
+import = ["/home/user/.config/alacritty/themes/custom.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = true
@@ -53,7 +53,7 @@ program = "/usr/bin/fish"
 
 [window]
 dynamic_title = true
-opacity = 1
+opacity = 0.5
 title = "Alacritty"
 
 [window.class]

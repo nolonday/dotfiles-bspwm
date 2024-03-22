@@ -5,7 +5,29 @@ sxhkd &
 exec bspwm
 4.alacritty,firefox,JetBrainsMono Nerd Font,dunst,libnotify,feh,unzip,
 flameshot,xclip,picom,polybar,micro,code,telegram-desktop,thunar,fish,
-ranger,rofi,pulseaudio,pywal,lxappearance
+ranger,rofi,pulseaudio,pywal,lxappearance,networkmanager,wpa_supplicant,g-pick,
+betterlockscreen
+
+-NetworkManager-
+sudo systemctl enable NetworkManager.service
+sudo systemctl enable wpa_supplicant.service
+sudo systemctl start NetworkManager.service 
+sudo reboot
+
+-Firefox-
+sponsor block,
+pywalfox,
+7tv,
+Bonjourr,
+AdBlocker Ultimate
+
+-pywal-
+python-pywal,
+python-pywalfox,
+wal-telegram-git
+
+-python-
+bs4,lxml,requests,fake_useragent
 
 cursors = https://www.youtube.com/watch?v=CF3UFxH8d0Y&t=306s
 

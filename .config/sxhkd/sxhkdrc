@@ -109,4 +109,7 @@ super + F4
 	sh $HOME/.config/scripts/wall_random
 
 super + F5
-	alacritty -e news.py
+	alacritty -e $HOME/.config/scripts/news.py
+
+super + F12
+    flameshot gui
