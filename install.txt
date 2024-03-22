@@ -2,7 +2,10 @@
 2.sxhkd => ~/.config/sxhkd/ => /usr/share/doc/bspwm/examples/sxhkdrc
 3. .xinirc/ => 
 sxhkd &
-exec bspw
+exec bspwm
 4.alacritty,firefox,JetBrainsMono Nerd Font,dunst,libnotify,feh,unzip,
 flameshot,xclip,picom,polybar,micro,code,telegram-desktop,thunar,fish,
 ranger,rofi,pulseaudio,pywal,lxappearance
+
+cursors = https://www.youtube.com/watch?v=CF3UFxH8d0Y&t=306s
+
