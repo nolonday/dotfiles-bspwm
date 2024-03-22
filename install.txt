@@ -29,5 +29,7 @@ wal-telegram-git
 -python-
 bs4,lxml,requests,fake_useragent
 
-cursors = https://www.youtube.com/watch?v=CF3UFxH8d0Y&t=306s
+-ly-
+sudo systemctl enable ly.service
+cursors =https://www.youtube.com/watch?v=CF3UFxH8d0Y&t=306s
 
